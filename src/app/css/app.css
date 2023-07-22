@@ -1,0 +1,218 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css');
+
+body {
+  margin: 0;
+  background: #fafafa;
+  font-family: 'Lato', sans-serif !important;
+  overflow: hidden;
+}
+table,
+button {
+  font-family: 'Lato', sans-serif !important;
+}
+.body-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body-wrapper > .auth-form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 500px;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Form CSS */
+
+.ant-form-item-control-input .ant-picker,
+.ant-form-item-control-input .ant-input {
+  padding: 10px 8px;
+  color: #272727;
+  border-color: #e1dede;
+  /* border-radius: 0.4rem; */
+}
+.ant-form-item-control-input .ant-select-selector {
+  height: auto !important;
+  padding: 8px 14px !important;
+}
+:where(.css-dev-only-do-not-override-1s3dcof).ant-input-affix-wrapper
+  > input.ant-input {
+  padding: 10px 8px;
+}
+
+/* Button */
+.ant-btn-primary {
+  background: #f05d23;
+}
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background: #f05d23 !important;
+}
+.center-align {
+  display: flex;
+  justify-content: center;
+}
+
+.home-wrapper {
+  height: 100vh;
+}
+.logo-wrapper {
+  padding: 1rem;
+}
+.logo-wrapper h5 {
+  margin: 0;
+  letter-spacing: 0.05rem;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.text-primary {
+  color: #f05d23;
+}
+.home-wrapper > .app-container {
+  padding: 1rem;
+  display: flex;
+  flex: 10;
+  height: calc(100vh - 80px);
+}
+.home-wrapper > .app-container > .left {
+  flex: 1.5;
+}
+.home-wrapper > .app-container > .right {
+  flex: 8.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.app-dashboard > .header > header {
+  /* width: 100%; */
+  /* position: fixed; */
+  /* padding: 0 18px; */
+  background: #fff;
+  /* height: 48px; */
+  padding-top: 8px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 12px;
+}
+.app-dashboard > .header .logo-wrapper img {
+  margin-inline-start: 10px;
+  position: relative;
+  /* margin-bottom: 0.25rem; */
+}
+.body-container {
+  border-radius: 4px;
+  background: #fff;
+  /* box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.03); */
+}
+.body-container > .header {
+  padding: 1.5rem;
+  border-top: 4px solid #f05d23;
+  display: flex;
+  justify-content: space-between;
+}
+.body-container > .body {
+  max-height: 80vh;
+  /* scroll-behavior: smooth; */
+  /* overflow-y: scroll; */
+}
+
+.body-container > .header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.pad-1 {
+  padding: 1rem;
+}
+
+.auth-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-container > .auth-form {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 4px;
+  width: 500px;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@media (max-width: 700px) {
+  .auth-container > .auth-form {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.row-flex > * {
+  margin-inline-start: 4px;
+}
+
+.margin-end-4 {
+  margin-block-end: 4px;
+}
+
+.activity-form-wrapper {
+  padding: 0.5rem;
+}
+
+.activity-form-wrapper .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+/* Activity Post item CSS */
+.ticket-activity-wrapper {
+  margin-bottom: 8px;
+  /* border-top: 1px solid #eee; */
+  padding: 0.5rem 0rem;
+}
+.ticket-activity {
+  display: flex;
+  align-items: center;
+  /* justify-content: a; */
+}
+
+.ticket-activity > .profile-holder p {
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  font-size: 24px;
+}
+.ticket-activity > .content {
+  /* padding: 0.25rem; */
+  margin-inline-start: 12px;
+}
+
+.ticket-activity > .content p {
+  margin: 0;
+}
+
+.ticket-activity-wrapper > .footer {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-activity-wrapper > .footer > p.timestamp {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.activity-holder {
+  max-height: calc(100vh - 30vh);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
